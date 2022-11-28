@@ -18,10 +18,8 @@ $(SHARED): $(OBJ)
 	$(CC) -fPIC -shared -o $@ $^
 
 exe: $(BIN)
-
 $(BIN): $(OBJ)
 	$(CC) $(CFLAGS) $^ -o $@
-
 $(OBJ): $(SRC)
 
 clean:
