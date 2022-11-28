@@ -20,7 +20,6 @@ $(SHARED): $(OBJ)
 exe: $(BIN)
 $(BIN): $(OBJ)
 	$(CC) $(CFLAGS) $^ -o $@
-$(OBJ): $(SRC)
 
 clean:
 	$(RM) $(OBJ) $(BIN) $(STATIC) $(SHARED)
