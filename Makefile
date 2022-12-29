@@ -1,5 +1,5 @@
-CC= gcc
-CFLAGS= -std=c99 -pedantic -Wall -Wextra -Werror -Wvla
+CC=gcc
+CFLAGS=-std=c99 -pedantic -Wall -Wextra -Werror -Wvla
 
 SRC=$(wildcard *.c)
 OBJ=$(SRC:.c=.o)
@@ -24,10 +24,9 @@ $(BIN): $(OBJ)
 clean:
 	$(RM) $(OBJ) $(BIN) $(STATIC) $(SHARED)
 
-# $(wildcard *.c) take all .c files
-# $(SRC:.c=.o) translate all .c to .o
+# $(wildcard *.c) takes all .c files
+# $(SRC:.c=.o) translate all .c files to .o files
 # Static for static library
 # Shared for shared library
-# $< take first dependencie
-# $^ take all dependencies
-# $@ take target
+# $^ takes all dependencies
+# $@ takes target
