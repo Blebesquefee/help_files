@@ -7,4 +7,4 @@ Use this repository as a ressource folder for all my generic files
 ## Contains
 - Makefile
 - clang-format
-- certificate-manager
+- Git commits types cheatsheet
